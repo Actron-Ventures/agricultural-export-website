@@ -30,11 +30,54 @@ nav details:hover{
     border-bottom: 1px solid #00AB0C;
     font-weight: bold;
 }
+details a{
+    display: block;
+    padding: 8px;
+}
+nav details[open]{
+    width: 100%;
+    background: white;
+}
+nav details[open]:hover{
+    border-bottom: none;
+}
 .logo{
     cursor: pointer;
     width: 100px;
 }
-.fa-bars{
+.mobMenu{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    justify-content: start;
+    background: #00AB0C;
+    color: #000;
+}
+.mobMenu li{
+    padding: 24px;
+}
+.mobMenu li:hover{
+    background: white;
+    color: #00AB0C;
+}
+.mobMenu li:nth-child(1):hover{
+    background: none;
+    color: white;
+    transform: scale(1.025);
+}
+.mobMenu li:nth-child(4){
+    padding: 0;
+}
+.mobMenu details{
+    padding: 24px;
+}
+.fa-bars,
+.fa-xmark{
     padding: 8px;
     font-size: 24px;
     color: #00AB0C;
@@ -49,8 +92,13 @@ nav details:hover{
         justify-content: center;
         gap: 8px;
     }
-    .fa-bars{
+    .fa-bars,
+    .fa-xmark{
         display: block;
+    }
+    .fa-xmark{
+        color: white;
+        text-align: right;
     }
 }
 /* Navigation Styling */
