@@ -102,3 +102,52 @@ nav details[open]:hover{
     }
 }
 /* Navigation Styling */
+
+/* Hero Slider */
+.sliderItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: 50vh;
+    padding: 0 48px;
+}
+.sliderItem:nth-child(1){
+    background: url(/images/home-pg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+.sliderItem:nth-child(2){
+    background: url(/images/home-pg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+.sliderItem:nth-child(3){
+    background: url(/images/home-pg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+.sliderItem > section{
+    padding:  8px;
+    background-color: rgba(255, 255, 255, 0.356);
+}
+.sliderItem h1{
+    color: white;
+    font-size: 24px;
+}
+.sliderItem a{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 12px 24px;
+    background: #00AB0C;
+    color: white;
+    text-decoration: none;
+}
+/* Hero Slider */
