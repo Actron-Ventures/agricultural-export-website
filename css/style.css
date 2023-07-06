@@ -254,15 +254,6 @@ footer ul {
     justify-content: center;
 }
 
-footer {
-    text-align: center;
-    border-top: 1px solid #00AB0C;
-}
-
-footer>h4>a {
-    color: #00AB0C;
-}
-
 .contact {
     flex-wrap: wrap;
 }
