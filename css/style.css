@@ -140,7 +140,7 @@ nav details[open]:hover{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center bottom;
+    background-position: center;
 }
 .sliderItem > section{
     padding:  8px;
@@ -212,6 +212,7 @@ section video{
     flex-direction: row-reverse;
 }
 footer ul{
+    padding: 0;
     width: 100%;
     justify-content: center;
 }
