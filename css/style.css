@@ -230,16 +230,20 @@ section video {
 
 .catalog {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     gap: 24px;
 }
 
-.catalog .herb img {
-    min-width: 150px;
-    width: 20%;
+.herb{
+    width: 150px;
+    text-align: center;
 }
+
+.catalog .herb img {
+    width: 20%;
+    min-width: 150px;
+}
+
 
 .center {
     text-align: center;
@@ -338,5 +342,9 @@ main {
 
     .section {
         padding: 32px;
+    }
+
+    .sectionTwo{
+        flex-direction: column;
     }
 }
