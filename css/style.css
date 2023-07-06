@@ -1,54 +1,71 @@
-body, header, nav, section{
+body,
+header,
+nav,
+section {
     margin: 0;
     padding: 0;
 }
-.flex{
+
+.flex {
     display: flex;
 }
+
 /* Navigation Styling */
-nav{
+nav {
     padding: 6px 24px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow:  2px 2px 2px rgba(0, 0, 0, 0.295);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.295);
 }
-ul{
+
+ul {
     width: 75%;
     display: flex;
     justify-content: flex-end;
     gap: 24px;
     list-style: none;
 }
-ul a{
+
+ul a {
     color: #000;
     cursor: pointer;
     text-decoration: none;
     transition: all 300ms;
 }
-ul a:hover, 
-nav details:hover{
+
+ul a:hover,
+nav details:hover {
     color: #00AB0C;
     padding-bottom: 6px;
     border-bottom: 1px solid #00AB0C;
     font-weight: bold;
 }
-details a{
+
+details{
+    overflow: hidden;
+}
+
+details a {
     display: block;
     padding: 8px;
 }
-nav details[open]{
+
+nav details[open] {
     width: 100%;
     background: white;
 }
-nav details[open]:hover{
+
+nav details[open]:hover {
     border-bottom: none;
 }
-.logo{
+
+.logo {
     cursor: pointer;
     width: 100px;
 }
-.mobMenu{
+
+.mobMenu {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -61,59 +78,72 @@ nav details[open]:hover{
     background: #00AB0C;
     color: #000;
 }
-.mobMenu li{
+
+.mobMenu li {
     padding: 24px;
 }
-.mobMenu li:hover{
+
+.mobMenu li:hover {
     background: white;
     color: #00AB0C;
 }
-.mobMenu li:nth-child(1):hover{
+
+.mobMenu li:nth-child(1):hover {
     background: none;
     color: white;
     transform: scale(1.025);
 }
-.mobMenu li:nth-child(4){
+
+.mobMenu li:nth-child(4) {
     padding: 0;
 }
-.mobMenu details{
+
+.mobMenu details {
     padding: 24px;
 }
+
 .fa-bars,
-.fa-xmark{
+.fa-xmark {
     padding: 8px;
     font-size: 24px;
     color: #00AB0C;
     cursor: pointer;
     display: none;
 }
+
 @media screen and (max-width:600px) {
-    .flex{
+    .flex {
         flex-direction: column;
     }
-    .noDisplay{
+
+    .noDisplay {
         display: none;
     }
-    ul{
+
+    ul {
         justify-content: center;
         gap: 8px;
     }
+
     .fa-bars,
-    .fa-xmark{
+    .fa-xmark {
         display: block;
     }
-    .fa-xmark{
+
+    .fa-xmark {
         color: white;
         text-align: right;
     }
-    .section{
+
+    .section {
         padding: 32px;
     }
 }
+
 /* Navigation Styling */
 
 /* Hero Slider */
-.sliderItem{
+.sliderItem {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -121,37 +151,43 @@ nav details[open]:hover{
     height: 50vh;
     padding: 0 48px;
 }
-.sliderItem:nth-child(1){
+
+.sliderItem:nth-child(1) {
     background: url(/images/home-pg-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center bottom;
 }
-.sliderItem:nth-child(2){
+
+.sliderItem:nth-child(2) {
     background: url(/images/about-pg-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center bottom;
 }
-.sliderItem:nth-child(3){
+
+.sliderItem:nth-child(3) {
     background: url(/images/gallery-land-prep-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
-.sliderItem > section{
-    padding:  8px;
+
+.sliderItem>section {
+    padding: 8px;
     background-color: rgba(255, 255, 255, 0.486);
 }
-.sliderItem h1{
+
+.sliderItem h1 {
     color: #00AB0C;
     font-size: 24px;
 }
+
 /* Hero Slider */
-.button{
+.button {
     display: block;
     width: fit-content;
     margin: 0 auto;
@@ -161,15 +197,19 @@ nav details[open]:hover{
     color: white;
     text-decoration: none;
 }
-.button i{
+
+.button i {
     margin: 0 8px;
 }
-h1, h2, h6{
+
+h1,
+h2,
+h6 {
     color: #00AB0C;
 }
 
 section img,
-section video{
+section video {
     min-width: 320px;
     width: 40%;
     height: 300px;
@@ -178,7 +218,7 @@ section video{
     border-radius: 12px;
 }
 
-.section{
+.section {
     gap: 48px;
     justify-content: center;
     align-items: center;
@@ -186,79 +226,111 @@ section video{
     overflow: hidden;
 }
 
-.catalog{
+.catalog {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 24px;
 }
-.catalog .herb img{
+
+.catalog .herb img {
     min-width: 150px;
 }
-.herb{
+
+.herb {
     width: 150px;
 }
 
-.center{
+.center {
     text-align: center;
 }
-.center section{
+
+.center section {
     max-width: 600px;
     margin: 0 auto;
 }
 
-.sectionTwo{
+.sectionTwo {
     flex-direction: row-reverse;
 }
-footer ul{
+
+footer ul {
     padding: 0;
     width: 100%;
     justify-content: center;
 }
-footer{
+
+footer {
     text-align: center;
     border-top: 1px solid #00AB0C;
 }
-footer > h4 > a{
+
+footer>h4>a {
     color: #00AB0C;
 }
 
-.contact{
+.contact {
     flex-wrap: wrap;
 }
 
-form{
+form {
     width: 50%;
     margin: 0 auto;
-  }
-  form *{
+}
+
+form * {
     display: block;
     padding: 6px;
-  }
-  input, 
-  textarea{
+}
+
+input,
+textarea {
     padding: 8px;
     border-radius: 8px;
     border: 1px solid black;
     margin: 0 auto;
     width: 75%;
-  }
-  
-  /* Contact Responsive Styles*/
-  @media screen and (max-width:600px) {
-    .center section{
+}
+
+main {
+    margin: 32px auto;
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.product {
+    display: block;
+    width: 200px;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.267);
+}
+.product img{
+    min-width: 200px;
+}
+
+/* Contact Responsive Styles*/
+@media screen and (max-width:600px) {
+    .center section {
         width: 100%;
     }
+
     input,
-    textarea{
-      width: 100%;
+    textarea {
+        width: 100%;
     }
-    form{
+
+    form {
         width: 75%;
-      padding: 24px 8px;
+        padding: 24px 8px;
     }
-    .section{
+
+    .section {
         padding: 32px;
     }
-  }
+}
