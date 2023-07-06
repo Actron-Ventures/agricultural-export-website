@@ -357,6 +357,16 @@ footer > h4 > a{
     .sectionTwo{
         flex-direction: column;
     }
+
+    .catalog{
+        gap: 8px;
+    }
+    .herb{
+        width: 100px;
+    }
+    .catalog .herb img{
+        min-width: 100px;
+    }
 }
 
 @media (min-width: 1200px) {
