@@ -139,7 +139,7 @@ ul a:hover{
 }
 
 .sliderItem:nth-child(1) {
-    background: url(/images/home-pg-2.jpg);
+    background: url(../images/home-pg-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -147,7 +147,7 @@ ul a:hover{
 }
 
 .sliderItem:nth-child(2) {
-    background: url(/images/home-pg-2.jpg);
+    background: url(../images/home-pg-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -155,7 +155,7 @@ ul a:hover{
 }
 
 .sliderItem:nth-child(3) {
-    background: url(/images/home-pg-2.jpg);
+    background: url(../images/home-pg-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
