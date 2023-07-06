@@ -153,6 +153,7 @@ nav details[open]:hover{
     width: fit-content;
     margin: 0 auto;
     padding: 12px 24px;
+    border: none;
     background: #00AB0C;
     color: white;
     text-decoration: none;
@@ -170,7 +171,7 @@ section video{
     min-width: 320px;
     height: 300px;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     border-radius: 12px;
 }
 
@@ -207,3 +208,39 @@ footer{
 footer > h4 > a{
     color: #00AB0C;
 }
+
+.contact{
+    flex-wrap: wrap;
+}
+
+form{
+    width: 50%;
+    font-size: 0.85rem;  
+    margin: 0 auto;
+  }
+  form *{
+    display: block;
+    padding: 6px;
+  }
+  input, 
+  textarea{
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid black;
+    width: 75%;
+  }
+  
+  /* Contact Responsive Styles*/
+  @media screen and (max-width:600px) {
+    input,
+    textarea{
+      width: 100%;
+    }
+    form{
+        width: 75%;
+      padding: 24px 8px;
+    }
+    input[type="button"]{
+      margin: 24px auto;
+    }
+  }
