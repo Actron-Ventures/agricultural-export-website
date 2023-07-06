@@ -2,6 +2,9 @@ body, header, nav{
     margin: 0;
     padding: 0;
 }
+.flex{
+    display: flex;
+}
 /* Navigation Styling */
 nav{
     padding: 6px 24px;
@@ -17,7 +20,7 @@ ul{
     gap: 24px;
     list-style: none;
 }
-nav a{
+ul a{
     color: #000;
     cursor: pointer;
     text-decoration: none;
@@ -85,6 +88,9 @@ nav details[open]:hover{
     display: none;
 }
 @media screen and (max-width:600px) {
+    .flex{
+        flex-direction: column;
+    }
     .noDisplay{
         display: none;
     }
@@ -120,14 +126,14 @@ nav details[open]:hover{
     background-position: center bottom;
 }
 .sliderItem:nth-child(2){
-    background: url(/images/home-pg-1.jpg);
+    background: url(/images/about-pg-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center bottom;
 }
 .sliderItem:nth-child(3){
-    background: url(/images/home-pg-1.jpg);
+    background: url(/images/gallery-land-prep-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -135,13 +141,14 @@ nav details[open]:hover{
 }
 .sliderItem > section{
     padding:  8px;
-    background-color: rgba(255, 255, 255, 0.356);
+    background-color: rgba(255, 255, 255, 0.486);
 }
 .sliderItem h1{
-    color: white;
+    color: #00AB0C;
     font-size: 24px;
 }
-.sliderItem a{
+/* Hero Slider */
+.button{
     display: block;
     width: fit-content;
     margin: 0 auto;
@@ -150,4 +157,53 @@ nav details[open]:hover{
     color: white;
     text-decoration: none;
 }
-/* Hero Slider */
+.button i{
+    margin: 0 8px;
+}
+h2, h6{
+    color: #00AB0C;
+}
+
+section img,
+section video{
+    width: 40%;
+    min-width: 320px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.section{
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    /* overflow: hidden; */
+}
+
+.catalog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.catalog .herb img{
+    min-width: 150px;
+}
+.herb{
+    width: 150px;
+}
+
+.center{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    border-top: 1px solid #00AB0C;
+}
+footer > h4 > a{
+    color: #00AB0C;
+}
