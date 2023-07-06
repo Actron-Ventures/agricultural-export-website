@@ -325,6 +325,10 @@ footer *{
     color: white;
 }
 
+footer h4 > a{
+    color: white;
+}
+
 /* Contact Responsive Styles*/
 @media screen and (max-width:600px) {
     .center section {
