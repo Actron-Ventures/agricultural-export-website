@@ -200,7 +200,6 @@ section video{
 .center{
     text-align: center;
     color: white;
-    margin: 0 auto;
     background: url(/images/home-pg-2.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -208,6 +207,7 @@ section video{
 }
 .center section{
     max-width: 450px;
+    margin: 0 auto;
 }
 
 footer{
