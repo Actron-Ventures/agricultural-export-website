@@ -161,7 +161,7 @@ nav details[open]:hover{
 .button i{
     margin: 0 8px;
 }
-h2, h6{
+h1, h2, h6{
     color: #00AB0C;
 }
 
@@ -199,6 +199,15 @@ section video{
 
 .center{
     text-align: center;
+    color: white;
+    margin: 0 auto;
+    background: url(/images/home-pg-2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.center section{
+    max-width: 450px;
 }
 
 footer{
@@ -215,7 +224,6 @@ footer > h4 > a{
 
 form{
     width: 50%;
-    font-size: 0.85rem;  
     margin: 0 auto;
   }
   form *{
