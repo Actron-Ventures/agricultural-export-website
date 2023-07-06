@@ -111,7 +111,7 @@ nav details[open]:hover {
     display: none;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     .flex {
         flex-direction: column;
     }
@@ -148,7 +148,8 @@ nav details[open]:hover {
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    height: 50vh;
+    height: 75vh;
+    align-items: center;
     padding: 0 48px;
 }
 
@@ -161,15 +162,15 @@ nav details[open]:hover {
 }
 
 .sliderItem:nth-child(2) {
-    background: url(/images/about-pg-2.jpg);
+    background: url(/images/home-pg-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center bottom;
+    background-position: center center;
 }
 
 .sliderItem:nth-child(3) {
-    background: url(/images/gallery-land-prep-1.jpg);
+    background: url(/images/home-pg-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -178,7 +179,8 @@ nav details[open]:hover {
 
 .sliderItem>section {
     padding: 8px;
-    background-color: rgba(255, 255, 255, 0.486);
+    color: white;
+    margin: auto 0;
 }
 
 .sliderItem h1 {
@@ -236,10 +238,7 @@ section video {
 
 .catalog .herb img {
     min-width: 150px;
-}
-
-.herb {
-    width: 150px;
+    width: 20%;
 }
 
 .center {
@@ -312,6 +311,13 @@ main {
 }
 .product img{
     min-width: 200px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-around;
 }
 
 /* Contact Responsive Styles*/
