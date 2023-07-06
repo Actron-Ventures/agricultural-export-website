@@ -244,7 +244,6 @@ section video {
     min-width: 150px;
 }
 
-
 .center {
     text-align: center;
 }
@@ -322,6 +321,11 @@ main {
     flex-wrap: wrap;
     gap: 32px;
     justify-content: space-around;
+}
+
+.contacts li > a{
+    color: #00AB0C;
+    text-decoration: underline;
 }
 
 /* Contact Responsive Styles*/
