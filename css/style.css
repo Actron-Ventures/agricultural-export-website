@@ -305,33 +305,17 @@ main {
     gap: 32px;
     justify-content: space-around;
 }
+.gallery img{
+    flex-basis: 250px;
+}
 
 .gallery img{
     flex-basis: 250px;
 }
 
 .contacts li > a{
-    color: #00AB0C;
-    text-decoration: underline;
-}
-
-.contacts li > a{
     color: white;
     text-decoration: underline;
-}
-
-footer{
-    justify-content: space-around;
-    align-items: center;
-    background: #00AB0C;
-}
-
-footer *{
-    color: white;
-}
-
-footer > h4 > a{
-    color: white;
 }
 
 /* Contact Responsive Styles*/
@@ -369,6 +353,30 @@ footer > h4 > a{
     }
 }
 
+@media (min-width: 1200px) {
+    .content{
+        padding: 32px 16px;
+    }
+    .content + img,
+    .content + video{
+        min-width: 50%;
+    }
+    .catalog{
+        gap: 12px;
+    }
+    .catalog .herb img{
+        min-width: 200px;
+    }
+    .herb{
+        width: 200px;
+    }
+    .product{
+        width: 300px;
+    }
+    .product img{
+        min-width: 250px;
+    }
+}
 @media (min-width: 1200px) {
     .content{
         padding: 32px 16px;
