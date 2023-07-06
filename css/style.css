@@ -319,6 +319,21 @@ main {
     text-decoration: underline;
 }
 
+.contacts li > a{
+    color: white;
+    text-decoration: underline;
+}
+
+footer{
+    justify-content: space-around;
+    align-items: center;
+    background: #00AB0C;
+}
+
+footer *{
+    color: white;
+}
+
 /* Contact Responsive Styles*/
 @media screen and (max-width:600px) {
     .center section {
