@@ -43,30 +43,11 @@ ul a {
     transition: all 300ms;
 }
 
-ul a:hover,
-nav details:hover {
+ul a:hover{
     color: #00AB0C;
     padding-bottom: 6px;
     border-bottom: 1px solid #00AB0C;
     font-weight: bold;
-}
-
-details{
-    overflow: hidden;
-}
-
-details a {
-    display: block;
-    padding: 8px;
-}
-
-nav details[open] {
-    width: 100%;
-    background: white;
-}
-
-nav details[open]:hover {
-    border-bottom: none;
 }
 
 .logo {
