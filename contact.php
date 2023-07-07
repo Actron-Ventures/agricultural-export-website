@@ -23,9 +23,15 @@ $emailBody = "
 <th>Phone Number: </th>
 </tr>
 <tr>
-<td>.$name.</td>
-<td>.$email.</td>
-<td>.$number.</td>
+<td>".$name."</td>
+<td>".$email."</td>
+<td>".$number."</td>
+</tr>
+</table>
+<table>
+<tr>
+<td>"
+.$message."</td>
 </tr>
 </table>
 </body>
