@@ -252,6 +252,7 @@ section video {
 footer{
     background: #00AB0C;
     justify-content: space-around;
+    color: white;
 }
 
 footer ul {
