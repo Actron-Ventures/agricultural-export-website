@@ -55,22 +55,22 @@
         <form method="post" action="../contact.php">
             <div class="inputContainer">
                 <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Your Name" name="name">
+                <input id="name" type="text" placeholder="Your Name" name="name" required>
             </div>
 
             <div class="inputContainer">
                 <label for="phoneNumber">Phone Number</label>
-                <input id="phoneNumber" type="tel" placeholder="Your Phone Number" name="phoneNumber">
+                <input id="phoneNumber" type="tel" placeholder="Your Phone Number" name="phoneNumber" required>
             </div>
 
             <div class="inputContainer">
                 <label for="email">Email</label>
-                <input id="email" type="email" placeholder="Your Email" name="email">
+                <input id="email" type="email" placeholder="Your Email" name="email" required>
             </div>
 
             <div class="inputContainer">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Write us a message" name="message"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Write us a message" name="message" required></textarea>
             </div>
 
             <input type="button" value="Submit" class="button">
