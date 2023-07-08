@@ -1,6 +1,7 @@
 body{
     font-family: 'Lato', sans-serif;
     line-height: 1.5;
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -386,30 +387,6 @@ main {
     }
 }
 
-@media (min-width: 1200px) {
-    .content{
-        padding: 32px 16px;
-    }
-    .content + img,
-    .content + video{
-        min-width: 50%;
-    }
-    .catalog{
-        gap: 12px;
-    }
-    .catalog .herb img{
-        min-width: 200px;
-    }
-    .herb{
-        width: 200px;
-    }
-    .product{
-        width: 300px;
-    }
-    .product img{
-        min-width: 250px;
-    }
-}
 @media (min-width: 1200px) {
     .content{
         padding: 32px 16px;
