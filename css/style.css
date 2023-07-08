@@ -249,10 +249,22 @@ section video {
     flex-direction: row-reverse;
 }
 
+footer{
+    background: #00AB0C;
+    justify-content: space-around;
+    color: white;
+}
+
 footer ul {
     padding: 0;
     width: 100%;
     justify-content: center;
+}
+
+.contacts li > a,
+footer > h4 > a{
+    color: white;
+    text-decoration: underline;
 }
 
 .contact {
@@ -311,11 +323,6 @@ main {
 
 .gallery img{
     flex-basis: 250px;
-}
-
-.contacts li > a{
-    color: white;
-    text-decoration: underline;
 }
 
 /* Contact Responsive Styles*/
