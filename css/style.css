@@ -71,7 +71,7 @@ ul a:hover{
 }
 
 .mobMenu li {
-    padding: 24px;
+    padding: 12px 24px;
 }
 
 .mobMenu li:hover {
@@ -83,14 +83,6 @@ ul a:hover{
     background: none;
     color: white;
     transform: scale(1.025);
-}
-
-.mobMenu li:nth-child(4) {
-    padding: 0;
-}
-
-.mobMenu details {
-    padding: 24px;
 }
 
 .fa-bars,
@@ -168,7 +160,6 @@ ul a:hover{
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 6px;
     justify-content: center;
     height: 100%;
 }
@@ -176,13 +167,14 @@ ul a:hover{
 .sliderItem h1 {
     color: #00AB0C;
     font-size: 24px;
+    margin: 0;
 }
 
 /* Hero Slider */
 .button {
     display: block;
     width: fit-content;
-    margin: 0 auto;
+    margin: 16px auto;
     padding: 12px 24px;
     border: none;
     background: #00AB0C;
@@ -195,8 +187,7 @@ ul a:hover{
 }
 
 h1,
-h2,
-h6 {
+h2 {
     color: #00AB0C;
 }
 
@@ -252,7 +243,7 @@ section video {
 footer{
     background: #00AB0C;
     justify-content: space-around;
-    color: white;
+    overflow: hidden;
 }
 
 footer ul {
@@ -266,19 +257,37 @@ footer > h4 > a{
     color: white;
     text-decoration: underline;
 }
+footer > h4 > a:hover{
+    color: #000;   
+}
+
+footer > h6{
+    margin: 8px auto;
+}
 
 .contact {
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 32px 56px;
 }
 
 form {
     width: 50%;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
 form * {
     display: block;
-    padding: 6px;
+}
+
+.inputContainer{
+    width: 100%;
+}
+
+form + video{
+    width: 50%;
 }
 
 input,
@@ -286,7 +295,7 @@ textarea {
     padding: 8px;
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.253);
-    margin: 0 auto;
+    margin: 0;
     width: 75%;
 }
 
@@ -318,17 +327,29 @@ main {
     justify-content: space-around;
 }
 .gallery img{
-    flex-basis: 250px;
+    min-width: 250px;
+    width: 30%;
 }
 
-.gallery img{
-    flex-basis: 250px;
+.contacts li > a{
+    color: white;
+    text-decoration: underline;
 }
 
 /* Contact Responsive Styles*/
 @media screen and (max-width:600px) {
+    .sliderItem{
+        height: 75vh;
+    }
     .center section {
+        text-align: left;
         width: 100%;
+    }
+
+    .content + img,
+    .content + video,
+    form + video{
+        min-width: 100%;
     }
 
     input,
@@ -338,11 +359,10 @@ main {
 
     form {
         width: 75%;
-        padding: 24px 8px;
     }
 
     .section {
-        padding: 32px;
+        padding: 24px;
     }
 
     .sectionTwo{
@@ -353,10 +373,16 @@ main {
         gap: 8px;
     }
     .herb{
-        width: 100px;
+        width: 120px;
     }
     .catalog .herb img{
-        min-width: 100px;
+        min-width: 120px;
+    }
+    footer{
+        text-align: center;
+    }
+    footer ul{
+        flex-direction: column;
     }
 }
 
