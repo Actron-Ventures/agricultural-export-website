@@ -253,6 +253,8 @@ iframe{
 footer{
     background: #00AB0C;
     justify-content: space-around;
+    align-items: center;
+    padding: 32px;
     overflow: hidden;
     padding: 24px;
 }
