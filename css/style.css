@@ -252,9 +252,8 @@ iframe{
 
 footer{
     background: #00AB0C;
-    justify-content: space-around;
-    align-items: center;
-    padding: 32px;
+    justify-content: center;
+    padding: 24px;
 }
 
 footer ul {
@@ -274,6 +273,7 @@ footer > h4 > a:hover{
 
 footer > h6{
     margin: 8px auto;
+    align-self: center;
 }
 
 .contact {
