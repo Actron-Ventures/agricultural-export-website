@@ -24,8 +24,8 @@ section {
 nav {
     position: fixed;
     top: 0;
-    width: 90%;
-    padding: 6px 24px;
+    width: 100%;
+    padding: 6px;
     display: flex;
     justify-content: space-around;
     align-items: center;
