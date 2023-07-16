@@ -22,11 +22,13 @@ section {
 
 /* Navigation Styling */
 nav {
+    position: fixed;
+    top: 0;
+    width: 90%;
     padding: 6px 24px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.295);
     z-index: 10;
 }
 
@@ -63,6 +65,7 @@ ul a:hover{
     bottom: 0;
     right: 0;
     width: 60%;
+    height: 90vh;
     padding: 0;
     margin: 0;
     flex-direction: column;
@@ -128,32 +131,14 @@ ul a:hover{
 
 /* Hero Slider */
 .sliderItem {
+    margin: 0;
     height: 60vh;
-    padding: 0 48px;
-}
-
-.sliderItem:nth-child(1) {
+    padding: 48px;
     background: url(../images/home-pg-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center bottom;
-}
-
-.sliderItem:nth-child(2) {
-    background: url(../images/home-pg-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-}
-
-.sliderItem:nth-child(3) {
-    background: url(../images/home-pg-2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
 }
 
 .sliderItem>section {
@@ -252,8 +237,8 @@ iframe{
 
 footer{
     background: #00AB0C;
-    justify-content: center;
     padding: 24px;
+    justify-content: space-around;
 }
 
 footer ul {
@@ -310,7 +295,7 @@ textarea {
 }
 
 main {
-    margin: 32px auto;
+    margin: 75px auto;
     padding: 24px;
     display: flex;
     justify-content: center;
@@ -350,6 +335,7 @@ main {
 @media screen and (max-width:600px) {
     .sliderItem{
         height: 75vh;
+        padding: 64px 16px 48px;
     }
     .center section {
         text-align: left;
@@ -368,7 +354,7 @@ main {
     }
 
     form {
-        width: 75%;
+        width: 85%;
     }
 
     .section {
@@ -419,4 +405,7 @@ main {
     .product img{
         min-width: 250px;
     }
+}
+header + section{
+    margin-top: 75px;
 }
