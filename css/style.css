@@ -402,7 +402,7 @@ main {
 
 @media (min-width: 1200px) {
     .sliderItem{
-        background-position: center center;
+        background-position: top center;
     }
     .section{
         padding: 32px 120px;
