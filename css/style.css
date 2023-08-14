@@ -265,7 +265,7 @@ footer > h4 > a:hover{
 
 footer > h6{
     margin: 8px auto;
-    align-self: center;
+    align-self:flex-end;
     color: white;
     font-weight: normal;
 }
